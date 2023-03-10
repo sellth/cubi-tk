@@ -1,0 +1,8 @@
+{% set source_names = cookiecutter.source_names.split(",") -%}
+{% set sample_conditions = cookiecutter.sample_conditions.split(",") -%}
+Sample Name	Protocol REF	Parameter Value[Dissociation method]	Performer	Date	Protocol REF	Parameter Value[Multiplexing method]	Parameter Value[Barcode ID]	Performer	Date	Protocol REF	Performer	Date	Protocol REF	Performer	Date	Library Name	Protocol REF	Performer	Date
+{%+ for source_name in source_names -%}
+{%+ for sample_condition in sample_conditions -%}
+{{source_name|replace("-", "_")}}_{{sample_condition|replace("-", "_")}}	Dissociation	{{cookiecutter.dissociation_type}}			Multiplexing	{{cookiecutter.sample_multiplexing}}				Antibody staining			Mass cytometry				Initial data processing		
+{% endfor -%}
+{% endfor -%}

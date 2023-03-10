@@ -1,0 +1,13 @@
+{
+    "investigation_identifier": "MY_CYTOF",
+    "investigation_title": "My CyTOF investigation",
+    "source_names": "source1,source2",
+    "sample_conditions": "condition1,condition2",
+    "source_characteristics": "Origin,Material",
+    "sample_characteristics": "Passage,Treatment substance,Treatment hours,Treatment target,Frozen",
+    "dissociation_type": ["pre-fix Trypsin", "post-fix Trypsin", "post-fix Octo"],
+    "sample_multiplexing": ["No", "SBT Pd 20-plex", "TOBis 35-plex", "Other"],
+    "i_dir_name": "{{cookiecutter.investigation_title|replace(' ', '_')}}",
+    "s_file_name": "{{cookiecutter.i_dir_name}}",
+    "assay_prefix": "{{cookiecutter.i_dir_name|lower}}"
+}

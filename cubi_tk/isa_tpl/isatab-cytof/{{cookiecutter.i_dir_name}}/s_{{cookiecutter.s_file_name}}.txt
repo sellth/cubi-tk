@@ -1,0 +1,10 @@
+{% set source_characteristics = cookiecutter.source_characteristics.split(",") -%}
+{% set sample_characteristics = cookiecutter.sample_characteristics.split(",") -%}
+{% set source_names = cookiecutter.source_names.split(",") -%}
+{% set sample_conditions = cookiecutter.sample_conditions.split(",") -%}
+Source Name	Characteristics[Organism]	Term Source REF	Term Accession Number{%+ for characteristic in source_characteristics %}	Characteristics[{{characteristic}}]{% endfor %}	Protocol REF	Parameter Value[Method]	Performer	Date	Sample Name{%+ for characteristic in sample_characteristics %}	Characteristics[{{characteristic}}]{% endfor %}
+{%+ for source_name in source_names -%}
+{%+ for sample_condition in sample_conditions -%}
+{{source_name|replace("-", "_")}}	Homo sapiens	NCBITAXON	http://purl.bioontology.org/ontology/NCBITAXON/9606{%+ for characteristic in source_characteristics %}	{% endfor %}	Sample collection				{{source_name|replace("-", "_")}}_{{sample_condition|replace("-", "_")}}{%+ for characteristic in sample_characteristics %}	{% endfor %}
+{% endfor -%}
+{% endfor -%}
