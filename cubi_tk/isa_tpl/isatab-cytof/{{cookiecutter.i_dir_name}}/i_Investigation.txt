@@ -1,8 +1,8 @@
 ONTOLOGY SOURCE REFERENCE
-Term Source Name	UO	OBI	NCBITAXON	OMIM	HP	ORPHA
-Term Source File	http://data.bioontology.org/ontologies/UO	http://data.bioontology.org/ontologies/OBI	http://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/OMIM	http://data.bioontology.org/ontologies/HP	http://data.bioontology.org/ontologies/ORDO
-Term Source Version	48	35	10	12	570	2.8
-Term Source Description	Units of Measurement Ontology	Ontology for Biomedical Investigations	National Center for Biotechnology Information (NCBI) Organismal Classification	Online Mendelian Inheritance in Man	Human Phenotype Ontology	Orphanet Rare Disease Ontology
+Term Source Name	UO	OBI	NCBITAXON	OMIM	HP	ORPHA	NCIT
+Term Source File	http://data.bioontology.org/ontologies/UO	http://data.bioontology.org/ontologies/OBI	http://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/OMIM	http://data.bioontology.org/ontologies/HP	http://data.bioontology.org/ontologies/ORDO	http://data.bioontology.org/ontologies/NCIT
+Term Source Version	217	49	21	23	599	26	128
+Term Source Description	Units of Measurement Ontology	Ontology for Biomedical Investigations	National Center for Biotechnology Information (NCBI) Organismal Classification	Online Mendelian Inheritance in Man	Human Phenotype Ontology	Orphanet Rare Disease Ontology	National Cancer Institute Thesaurus
 INVESTIGATION
 Investigation Identifier	{{cookiecutter.investigation_identifier}}
 Investigation Title	{{cookiecutter.investigation_title}}
@@ -49,8 +49,8 @@ Study Publication Status
 Study Publication Status Term Accession Number
 Study Publication Status Term Source REF
 STUDY FACTORS
-Study Factor Name
-Study Factor Type
+Study Factor Name	Sample frozen
+Study Factor Type	logical
 Study Factor Type Term Accession Number
 Study Factor Type Term Source REF
 STUDY ASSAYS
@@ -71,9 +71,9 @@ Study Protocol Type Term Source REF	""	""	""	""	""	""
 Study Protocol Description	""	""	""	""	""	"De-multiplexing & quality gating"
 Study Protocol URI	""	""	""	""	""	""
 Study Protocol Version	""	""	""	""	""	""
-Study Protocol Parameters Name	Method	Dissociation method	Multiplexing method;Barcode ID	""	""	""
-Study Protocol Parameters Name Term Accession Number	""	""	";"	""	""	""
-Study Protocol Parameters Name Term Source REF	""	""	";"	""	""	""
+Study Protocol Parameters Name	Method;Treatment target;Treatment substance;Treatment time	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	""	""
+Study Protocol Parameters Name Term Accession Number	";;;"	""	";;"	""	""	""
+Study Protocol Parameters Name Term Source REF	";;;"	""	";;"	""	""	""
 Study Protocol Components Name	""	""	""	""	""	""
 Study Protocol Components Type	""	""	""	""	""	""
 Study Protocol Components Type Term Accession Number	""	""	""	""	""	""
