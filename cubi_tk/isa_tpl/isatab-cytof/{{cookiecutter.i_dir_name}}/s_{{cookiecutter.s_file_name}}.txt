@@ -1,10 +1,9 @@
 {% set source_characteristics = cookiecutter.source_characteristics.split(",") -%}
-{% set sample_characteristics = cookiecutter.sample_characteristics.split(",") -%}
 {% set source_names = cookiecutter.source_names.split(",") -%}
 {% set sample_conditions = cookiecutter.sample_conditions.split(",") -%}
 Source Name	Characteristics[Organism]	Term Source REF	Term Accession Number	Characteristics[Tissue]	Term Source REF	Term Accession Number{%+ for characteristic in source_characteristics %}	Characteristics[{{characteristic}}]{% endfor %}	Protocol REF	Parameter Value[Method]	Parameter Value[Treatment target]	Parameter Value[Treatment substance]	Parameter Value[Treatment time]	Unit	Term Source REF	Term Accession Number	Performer	Date	Sample Name	Factor Value[Sample frozen]
 {%+ for source_name in source_names -%}
 {%+ for sample_condition in sample_conditions -%}
-{{source_name|replace("-", "_")}}	Homo sapiens	NCBITAXON	http://purl.bioontology.org/ontology/NCBITAXON/9606	Intestinal Epithelium	NCIT	http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl%23C49240{%+ for characteristic in source_characteristics %}	{% endfor %}	Sample collection						UO	http://purl.obolibrary.org/obo/UO_0000003			{{source_name|replace("-", "_")}}_{{sample_condition|replace("-", "_")}}	
+{{source_name|replace("-", "_")}}	Homo sapiens	NCBITAXON	http://purl.bioontology.org/ontology/NCBITAXON/9606	Intestinal Epithelium	NCIT	http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl%23C49240{%+ for characteristic in source_characteristics %}	{% endfor %}	Sample collection					hours	UO	http://purl.obolibrary.org/obo/UO_0000003			{{source_name|replace("-", "_")}}_{{sample_condition|replace("-", "_")}}	
 {% endfor -%}
 {% endfor -%}

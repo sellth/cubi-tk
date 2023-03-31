@@ -51,8 +51,8 @@ Study Publication Status Term Source REF
 STUDY FACTORS
 Study Factor Name	Sample frozen
 Study Factor Type	logical
-Study Factor Type Term Accession Number
-Study Factor Type Term Source REF
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
 STUDY ASSAYS
 Study Assay File Name	a_{{cookiecutter.assay_prefix}}_mass_cytometry.txt
 Study Assay Measurement Type	protein expression profiling
