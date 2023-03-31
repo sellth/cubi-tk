@@ -1,3 +1,4 @@
+{% set sample_collection_parameters = cookiecutter.sample_collection_parameters.split(",") -%}
 ONTOLOGY SOURCE REFERENCE
 Term Source Name	UO	OBI	NCBITAXON	OMIM	HP	ORPHA	NCIT
 Term Source File	http://data.bioontology.org/ontologies/UO	http://data.bioontology.org/ontologies/OBI	http://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/OMIM	http://data.bioontology.org/ontologies/HP	http://data.bioontology.org/ontologies/ORDO	http://data.bioontology.org/ontologies/NCIT
@@ -70,9 +71,9 @@ Study Protocol Type Term Source REF	""	""	""	""	""	""
 Study Protocol Description	""	""	""	""	""	"De-multiplexing & quality gating"
 Study Protocol URI	""	""	""	""	""	""
 Study Protocol Version	""	""	""	""	""	""
-Study Protocol Parameters Name	Method;Treatment target;Treatment substance;Treatment time	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	""	""
-Study Protocol Parameters Name Term Accession Number	";;;"	""	";;"	""	""	""
-Study Protocol Parameters Name Term Source REF	";;;"	""	";;"	""	""	""
+Study Protocol Parameters Name	Method{%+ for parameter in sample_collection_parameters %};{{parameter}}{% endfor %}	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	""	""
+Study Protocol Parameters Name Term Accession Number	"{%+ for parameter in sample_collection_parameters %};{% endfor %}"	""	";;"	""	""	""
+Study Protocol Parameters Name Term Source REF	"{%+ for parameter in sample_collection_parameters %};{% endfor %}"	""	";;"	""	""	""
 Study Protocol Components Name	""	""	""	""	""	""
 Study Protocol Components Type	""	""	""	""	""	""
 Study Protocol Components Type Term Accession Number	""	""	""	""	""	""
