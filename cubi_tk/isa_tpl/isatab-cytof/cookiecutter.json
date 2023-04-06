@@ -1,6 +1,7 @@
 {
     "investigation_identifier": "MY_CYTOF",
     "investigation_title": "My CyTOF investigation",
+	"investigation_description": "",
     "source_names": "source1,source2",
     "source_characteristics": "Origin,Passage",
     "sample_conditions": "condition1,condition2",

@@ -7,7 +7,7 @@ Term Source Description	Units of Measurement Ontology	Ontology for Biomedical In
 INVESTIGATION
 Investigation Identifier	{{cookiecutter.investigation_identifier}}
 Investigation Title	{{cookiecutter.investigation_title}}
-Investigation Description	""
+Investigation Description	{{cookiecutter.investigation_description}}
 Investigation Submission Date	""
 Investigation Public Release Date	""
 INVESTIGATION PUBLICATIONS
@@ -33,7 +33,7 @@ Investigation Person Roles Term Source REF
 STUDY
 Study Identifier	{{cookiecutter.i_dir_name}}
 Study Title	{{cookiecutter.investigation_title}}
-Study Description	""
+Study Description	{{cookiecutter.investigation_description}}
 Study Submission Date	""
 Study Public Release Date	""
 Study File Name	s_{{cookiecutter.s_file_name}}.txt
