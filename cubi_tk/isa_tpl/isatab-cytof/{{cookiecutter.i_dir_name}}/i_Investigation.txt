@@ -31,12 +31,12 @@ Investigation Person Roles
 Investigation Person Roles Term Accession Number
 Investigation Person Roles Term Source REF
 STUDY
-Study Identifier	{{cookiecutter.i_dir_name}}
+Study Identifier	{{cookiecutter.investigation_identifier}}
 Study Title	{{cookiecutter.investigation_title}}
 Study Description	{{cookiecutter.investigation_description}}
 Study Submission Date	""
 Study Public Release Date	""
-Study File Name	s_{{cookiecutter.s_file_name}}.txt
+Study File Name	s_{{cookiecutter.__s_file_name}}.txt
 STUDY DESIGN DESCRIPTORS
 Study Design Type
 Study Design Type Term Accession Number
@@ -55,7 +55,7 @@ Study Factor Type	logical
 Study Factor Type Term Accession Number	
 Study Factor Type Term Source REF	
 STUDY ASSAYS
-Study Assay File Name	a_{{cookiecutter.assay_prefix}}_mass_cytometry.txt
+Study Assay File Name	a_{{cookiecutter.__assay_prefix}}_mass_cytometry.txt
 Study Assay Measurement Type	protein expression profiling
 Study Assay Measurement Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0000615
 Study Assay Measurement Type Term Source REF	OBI
