@@ -71,9 +71,9 @@ Study Protocol Type Term Source REF	""	""	""	""	""	""
 Study Protocol Description	""	""	""	""	""	"De-multiplexing & quality gating"
 Study Protocol URI	""	""	""	""	""	""
 Study Protocol Version	""	""	""	""	""	""
-Study Protocol Parameters Name	Method{%+ for parameter in sample_collection_parameters %};{{parameter}}{% endfor %}	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel;Report file	Cell count pre acquisition;Cells acquired;Report file	Report file
-Study Protocol Parameters Name Term Accession Number	"{%+ for parameter in sample_collection_parameters %};{% endfor %}"	""	";;"	";"	";;"	""
-Study Protocol Parameters Name Term Source REF	"{%+ for parameter in sample_collection_parameters %};{% endfor %}"	""	";;"	";"	";;"	""
+Study Protocol Parameters Name	Method{%+ for parameter in sample_collection_parameters %};{{parameter}}{% endfor %}	Dissociation method	Multiplexing method;Barcode ID;Barcode key;Report file	Antibody panel;Report file	Cell count pre acquisition;Cells acquired;Report file	Report file
+Study Protocol Parameters Name Term Accession Number	"{%+ for parameter in sample_collection_parameters %};{% endfor %}"	""	";;;"	";"	";;"	""
+Study Protocol Parameters Name Term Source REF	"{%+ for parameter in sample_collection_parameters %};{% endfor %}"	""	";;;"	";"	";;"	""
 Study Protocol Components Name	""	""	""	""	""	""
 Study Protocol Components Type	""	""	""	""	""	""
 Study Protocol Components Type Term Accession Number	""	""	""	""	""	""
