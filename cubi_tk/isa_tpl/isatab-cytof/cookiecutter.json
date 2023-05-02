@@ -14,19 +14,19 @@
 	"material": [
 	  "Cell line",
 	  "Organoid",
-	  "PBMC Sample"
+	  "PBMC sample"
 	],
 	"__material_ncit": {
 		"Cell line": "%23C16403",
 		"Organoid": "%23C172259",
-		"PBMC Sample": "%23C178965"
+		"PBMC sample": "%23C178965"
 	},
 	"tissue": [
 	  "No",
-	  "Intestinal Epithelium"
+	  "Intestinal epithelium"
 	],
 	"__tissue_ncit": {
-	  "Intestinal Epithelium": "%23C49240"
+	  "Intestinal epithelium": "%23C49240"
 	},
     "source_characteristics": "Origin,Passage",
     "sample_conditions": "condition1,condition2",
