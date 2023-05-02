@@ -72,3 +72,21 @@ def test_run_cookiecutter_isatab_ms_meta_biocrates(tmp_path):
     print([match, mismatch, errors])
     assert len(mismatch) == 0
     assert len(errors) == 0
+
+
+def test_run_cookiecutter_isatab_cytof(tmp_path):
+    # Setup parameters
+    output_path = tmp_path / "output_dir"
+    parser, subparsers = setup_argparse()
+    args = parser.parse_args(["isa-tpl", "mass_cytometry", str(output_path)])
+
+    # Create templates
+    run_isatpl = run_cookiecutter(TEMPLATES["mass_cytometry"], no_input=True)
+    run_isatpl(args, parser, subparsers.choices[args.cmd])
+
+    # Check output files
+    assert output_path.exists()
+    assert (output_path / "i_Investigation.txt").exists()
+    assert (output_path / "s_Investigation_ID.txt").exists()
+    assert (output_path / "a_Investigation_ID_mass_cytometry.txt").exists()
+

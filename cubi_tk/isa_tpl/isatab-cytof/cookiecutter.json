@@ -1,6 +1,6 @@
 {
-    "investigation_identifier": "MY_CYTOF",
-    "investigation_title": "My CyTOF investigation",
+    "investigation_identifier": "Investigation_ID",
+    "investigation_title": "Investigation Title",
 	"investigation_description": "",
     "source_names": "source1,source2",
     "organism": [
